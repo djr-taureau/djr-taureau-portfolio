@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "djr-taureau-portfolio": {
+    "angular-ngrx-material-starter": {
       "root": "",
       "sourceRoot": "/src",
       "projectType": "application",
