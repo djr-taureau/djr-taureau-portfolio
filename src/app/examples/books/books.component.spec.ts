@@ -7,11 +7,11 @@ import { SharedModule } from '@app/shared';
 
 import { ExamplesModule } from '../examples.module';
 
-import { StockMarketComponent } from './stock-market.component';
+import { BooksComponent } from './books.component';
 
-describe('StockMarketComponent', () => {
-  let component: StockMarketComponent;
-  let fixture: ComponentFixture<StockMarketComponent>;
+describe('BooksComponent', () => {
+  let component: BooksComponent;
+  let fixture: ComponentFixture<BooksComponent>;
 
   beforeEach(
     async(() => {
@@ -28,7 +28,7 @@ describe('StockMarketComponent', () => {
   );
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(StockMarketComponent);
+    fixture = TestBed.createComponent(BooksComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

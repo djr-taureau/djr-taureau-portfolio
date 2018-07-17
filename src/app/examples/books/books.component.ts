@@ -2,48 +2,44 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
+import { BOOK_TITLES } from './books.reducer';
 
 import {
-  ActionStockMarketRetrieve,
-  selectorStocks
-} from './stock-market.reducer';
+  ActionBookRetrieve,
+  selectorBooks
+} from './books.reducer';
 
 @Component({
-  selector: 'app-stock-market',
-  templateUrl: './stock-market.component.html',
-  styleUrls: ['./stock-market.component.scss']
+  selector: 'app-books',
+  templateUrl: './books.component.html',
+  styleUrls: ['./books.component.scss']
 })
-export class StockMarketComponent implements OnInit, OnDestroy {
+export class BooksComponent implements OnInit, OnDestroy {
   private unsubscribe$: Subject<void> = new Subject<void>();
 
   initialized;
-  stocks;
+  books;
 
   constructor(public store: Store<any>) {}
 
   ngOnInit() {
     this.initialized = false;
     this.store
-      .select(selectorStocks)
+      .select(selectorBooks)
       .pipe(takeUntil(this.unsubscribe$))
-      .subscribe((stocks: any) => {
-        this.stocks = stocks;
+      .subscribe((books: any) => {
+        this.books = books;
 
         if (!this.initialized) {
           this.initialized = true;
           this.store.dispatch(
-            new ActionStockMarketRetrieve({ symbol: stocks.symbol })
+            new ActionBookRetrieve({ titles: BOOK_TITLES })
           );
         }
       });
   }
-
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();
-  }
-
-  onSymbolChange(symbol: string) {
-    this.store.dispatch(new ActionStockMarketRetrieve({ symbol }));
   }
 }

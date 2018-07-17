@@ -7,9 +7,9 @@ describe('App', () => {
 
   beforeEach(() => (page = new AppPage()));
 
-  it('should redirect to "about" route', () => {
+  it('should redirect to "overview" route', () => {
     page.navigateTo();
-    expect(getCurrentRouteUrl()).toEqual('about');
+    expect(getCurrentRouteUrl()).toEqual('overview');
   });
 
   it('should display current year in the footer', () => {
@@ -17,10 +17,10 @@ describe('App', () => {
     expect(page.getCurrentYear()).toEqual(new Date().getFullYear().toString());
   });
 
-  it('should have "About", "Features", "Examples" menus', () => {
+  it('should have "overview", "projects", "Examples" menus', () => {
     page.navigateTo();
     page
       .getAllMenus()
-      .then(menus => expect(menus).toEqual(['About', 'Features', 'Examples']));
+      .then(menus => expect(menus).toEqual(['overview', 'projects', 'Examples']));
   });
 });

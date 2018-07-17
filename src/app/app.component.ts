@@ -40,9 +40,9 @@ export class AppComponent implements OnInit, OnDestroy {
   year = new Date().getFullYear();
   logo = require('../assets/logo.png');
   navigation = [
-    { link: 'about', label: 'About' },
-    { link: 'features', label: 'Features' },
-    { link: 'examples', label: 'Examples' }
+    { link: 'overview', label: 'Overview' },
+    { link: 'projects', label: 'Projects' },
+    { link: 'examples', label: 'About' },
   ];
   navigationSideMenu = [
     ...this.navigation,

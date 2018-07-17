@@ -9,10 +9,14 @@ import { ExamplesComponent } from './examples/examples.component';
 import { TodosComponent } from './todos/todos.component';
 import { todosReducer } from './todos/todos.reducer';
 import { TodosEffects } from './todos/todos.effects';
-import { StockMarketComponent } from './stock-market/stock-market.component';
-import { stockMarketReducer } from './stock-market/stock-market.reducer';
-import { StockMarketEffects } from './stock-market/stock-market.effects';
-import { StockMarketService } from './stock-market/stock-market.service';
+import { BooksComponent } from './books/books-component';
+import {BookAuthorsComponent} from './books/book-authors.component';
+import {BookPreviewListComponent} from './books/book-preview-list.component';
+import {BookPreviewComponent} from './books/book-preview.component';
+import { BooksCollectionComponent  } from './books/books-collection-component';
+import { BooksReducer } from './books/books.reducer';
+import { BooksEffects } from './books/books.effects';
+import { GoogleBooksService } from './books/google-books.service';
 import { ParentComponent } from './theming/parent/parent.component';
 import { ChildComponent } from './theming/child/child.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
@@ -23,19 +27,23 @@ import { AuthenticatedComponent } from './authenticated/authenticated.component'
     ExamplesRoutingModule,
     StoreModule.forFeature('examples', {
       todos: todosReducer,
-      stocks: stockMarketReducer
+      books: BooksReducer
     }),
-    EffectsModule.forFeature([TodosEffects, StockMarketEffects])
+    EffectsModule.forFeature([TodosEffects, BooksEffects])
   ],
   declarations: [
     ExamplesComponent,
+    BooksComponent,
+    BookAuthorsComponent,
+    BookPreviewComponent,
+    BookPreviewListComponent,
+    BooksCollectionComponent,
     TodosComponent,
-    StockMarketComponent,
     ParentComponent,
     ChildComponent,
     AuthenticatedComponent
   ],
-  providers: [StockMarketService]
+  providers: [GoogleBooksService]
 })
 export class ExamplesModule {
   constructor() {}

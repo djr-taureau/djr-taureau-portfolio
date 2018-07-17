@@ -1,10 +1,10 @@
-import { AboutPage } from './about.po';
+import { overviewPage } from './overview.po';
 import { getCurrentRouteUrl } from '../utils';
 
-describe('About Page', () => {
-  let page: AboutPage;
+describe('overview Page', () => {
+  let page: overviewPage;
 
-  beforeEach(() => (page = new AboutPage()));
+  beforeEach(() => (page = new overviewPage()));
 
   it('should display main heading', () => {
     page.navigateTo();
@@ -19,11 +19,11 @@ describe('About Page', () => {
       .then(isPresent => expect(isPresent).toBe(true));
   });
 
-  it('first action button should lead to "Features" route', () => {
+  it('first action button should lead to "projects" route', () => {
     page.navigateTo();
     page
       .getActionButton(0)
       .click()
-      .then(() => expect(getCurrentRouteUrl()).toBe('features'));
+      .then(() => expect(getCurrentRouteUrl()).toBe('projects'));
   });
 });

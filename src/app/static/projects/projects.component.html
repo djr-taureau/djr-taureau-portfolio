@@ -1,0 +1,21 @@
+<div class="container">
+<div class="row align-items-end">
+<div class="col-lg-12" [ngClass]="routeAnimationsElements">
+<div class="box-pos" *carousel="let project from projects; let ctrl = controller">
+
+    <button (click)="ctrl.prev()" mat-icon-button class="left-button">
+      <mat-icon>navigate_before</mat-icon>
+    </button>
+
+    <main class="mat-elevation-z4">
+      <img [src]="project.img">
+      <p>{{ project.title }}</p>
+    </main>
+
+    <button (click)="ctrl.next()" mat-icon-button class="right-button">
+      <mat-icon>navigate_next</mat-icon>
+    </button>
+</div>
+</div>
+</div>
+</div>

@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
     CoreModule,
     SharedModule,
 
-    // features
+    // projects
     StaticModule,
     SettingsModule,
 

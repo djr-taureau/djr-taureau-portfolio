@@ -5,7 +5,7 @@ import { AuthGuardService } from '@app/core';
 
 import { ExamplesComponent } from './examples/examples.component';
 import { TodosComponent } from './todos/todos.component';
-import { StockMarketComponent } from './stock-market/stock-market.component';
+import { BooksComponent } from './books/books.component';
 import { ParentComponent } from './theming/parent/parent.component';
 import { AuthenticatedComponent } from './authenticated/authenticated.component';
 
@@ -27,10 +27,10 @@ const routes: Routes = [
         }
       },
       {
-        path: 'stock-market',
-        component: StockMarketComponent,
+        path: 'books',
+        component: BooksComponent,
         data: {
-          title: 'Stock Market'
+          title: 'Reads'
         }
       },
       {

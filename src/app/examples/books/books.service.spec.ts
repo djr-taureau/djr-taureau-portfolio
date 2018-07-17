@@ -3,19 +3,19 @@ import { RouterTestingModule } from '@angular/router/testing';
 
 import { CoreModule } from '@app/core';
 
-import { StockMarketService } from './stock-market.service';
+import { GoogleBooksService } from './google-books.service';
 
-describe('StockMarketService', () => {
+describe('GooglBooksService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       imports: [RouterTestingModule, CoreModule],
-      providers: [StockMarketService]
+      providers: [GoogleBooksService]
     });
   });
 
   it(
     'should be created',
-    inject([StockMarketService], (service: StockMarketService) => {
+    inject([GoogleBooksService], (service: GoogleBooksService) => {
       expect(service).toBeTruthy();
     })
   );

@@ -1,9 +1,9 @@
 @import '~@angular/material/theming';
 
-@mixin app-stock-market-component-theme($theme) {
+@mixin app-books-component-theme($theme) {
   $warn: map-get($theme, warn);
 
-  app-stock-market {
+  app-books {
     mat-card {
       .negative {
         color: mat-color($warn);

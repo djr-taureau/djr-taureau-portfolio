@@ -6,7 +6,7 @@ import { SettingsComponent } from './settings';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'about',
+    redirectTo: 'overview',
     pathMatch: 'full'
   },
   {
@@ -22,7 +22,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: 'about'
+    redirectTo: 'overview'
   }
 ];
 

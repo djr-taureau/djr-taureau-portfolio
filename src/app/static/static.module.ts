@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 
 import { SharedModule } from '@app/shared';
-
+import { CarouselDirective } from './carousel.directive';
 import { StaticRoutingModule } from './static-routing.module';
-import { AboutComponent } from './about/about.component';
-import { FeaturesComponent } from './features/features.component';
+import { OverviewComponent } from './overview/overview.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @NgModule({
   imports: [SharedModule, StaticRoutingModule],
-  declarations: [AboutComponent, FeaturesComponent]
+  declarations: [OverviewComponent, ProjectsComponent, CarouselDirective]
+
 })
 export class StaticModule {}

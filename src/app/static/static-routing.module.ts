@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AboutComponent } from './about/about.component';
-import { FeaturesComponent } from './features/features.component';
+import { OverviewComponent } from './overview/overview.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 const routes: Routes = [
-  { path: 'about', component: AboutComponent, data: { title: 'About' } },
+  { path: 'overview', component: OverviewComponent, data: { title: 'overview' } },
   {
-    path: 'features',
-    component: FeaturesComponent,
-    data: { title: 'Features' }
+    path: 'projects',
+    component: ProjectsComponent,
+    data: { title: 'projects' }
   }
 ];
 
