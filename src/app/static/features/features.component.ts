@@ -20,12 +20,13 @@ export class FeaturesComponent implements OnInit {
     window.open(link, '_blank');
   }
 }
-
+//
 const PROJECTS: any[] = [
   {'title': 'Pomodoit-ngrx',
    'img': '../../../assets/pomodoist.png',
-   'github': '',
-   'stackblitz': '',
+   'altImg': 'pomdoit-ngrx',
+   'github': 'https://github.com/djr-taureau/pomodoro-it-ngrx',
+   'stackblitz': 'https://stackblitz.com/edit/pomo-doist-ngrx',
    'deployed': ''
   },
   {'title': 'BlocJams-angular',
@@ -41,18 +42,6 @@ const PROJECTS: any[] = [
  'deployed': ''
 },
 {'title': 'BlocJams-React',
-'img': '../../../assets/pomodoist.png',
-'github': '',
-'stackblitz': '',
-'deployed': ''
-},
-{'title': 'Blocipedia',
-'img': '../../../assets/pomodoist.png',
-'github': '',
-'stackblitz': '',
-'deployed': ''
-},
-{'title': 'Kele API Client',
 'img': '../../../assets/pomodoist.png',
 'github': '',
 'stackblitz': '',
