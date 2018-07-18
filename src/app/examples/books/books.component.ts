@@ -24,20 +24,8 @@ export class BooksComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.initialized = false;
-    this.store
-      .select(selectorBooks)
-      .pipe(takeUntil(this.unsubscribe$))
-      .subscribe((books: any) => {
-        this.books = books;
-
-        if (!this.initialized) {
-          this.initialized = true;
-          this.store.dispatch(
-            new ActionBookRetrieve({ titles: BOOK_TITLES })
-          );
-        }
-      });
   }
+
   ngOnDestroy(): void {
     this.unsubscribe$.next();
     this.unsubscribe$.complete();

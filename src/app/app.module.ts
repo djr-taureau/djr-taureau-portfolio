@@ -6,16 +6,18 @@ import { CoreModule } from '@app/core';
 
 import { SettingsModule } from './settings';
 import { StaticModule } from './static';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { GalleryModule } from '@ngx-gallery/core';
+
 
 @NgModule({
   imports: [
     // angular
     BrowserAnimationsModule,
     BrowserModule,
-
+    FlexLayoutModule,
     // core & shared
     CoreModule,
     SharedModule,
@@ -23,7 +25,7 @@ import { AppComponent } from './app.component';
     // projects
     StaticModule,
     SettingsModule,
-
+    GalleryModule.forRoot(),
     // app
     AppRoutingModule
   ],

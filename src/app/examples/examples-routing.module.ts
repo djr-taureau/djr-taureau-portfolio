@@ -6,8 +6,8 @@ import { AuthGuardService } from '@app/core';
 import { ExamplesComponent } from './examples/examples.component';
 import { TodosComponent } from './todos/todos.component';
 import { BooksComponent } from './books/books.component';
-import { ParentComponent } from './theming/parent/parent.component';
-import { AuthenticatedComponent } from './authenticated/authenticated.component';
+import { BioComponent } from './bio/bio.component';
+import { PlacesComponent } from './places/places.component';
 
 const routes: Routes = [
   {
@@ -30,22 +30,21 @@ const routes: Routes = [
         path: 'books',
         component: BooksComponent,
         data: {
-          title: 'Reads'
+          title: 'books'
         }
       },
       {
-        path: 'theming',
-        component: ParentComponent,
+        path: 'bio',
+        component: BioComponent,
         data: {
-          title: 'Theming'
+          title: 'bio'
         }
       },
       {
-        path: 'authenticated',
-        component: AuthenticatedComponent,
-        canActivate: [AuthGuardService],
+        path: 'places',
+        component: PlacesComponent,
         data: {
-          title: 'Authenticated'
+          title: 'places'
         }
       }
     ]

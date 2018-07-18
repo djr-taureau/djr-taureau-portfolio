@@ -9,7 +9,7 @@ import { ExamplesComponent } from './examples/examples.component';
 import { TodosComponent } from './todos/todos.component';
 import { todosReducer } from './todos/todos.reducer';
 import { TodosEffects } from './todos/todos.effects';
-import { BooksComponent } from './books/books-component';
+import { BooksComponent } from './books/books.component';
 import {BookAuthorsComponent} from './books/book-authors.component';
 import {BookPreviewListComponent} from './books/book-preview-list.component';
 import {BookPreviewComponent} from './books/book-preview.component';
@@ -17,9 +17,9 @@ import { BooksCollectionComponent  } from './books/books-collection-component';
 import { BooksReducer } from './books/books.reducer';
 import { BooksEffects } from './books/books.effects';
 import { GoogleBooksService } from './books/google-books.service';
-import { ParentComponent } from './theming/parent/parent.component';
-import { ChildComponent } from './theming/child/child.component';
-import { AuthenticatedComponent } from './authenticated/authenticated.component';
+import { BioComponent } from './bio/bio.component';
+import { PlacesComponent } from './places/places.component';
+import { GalleryModule } from '@ngx-gallery/core';
 
 @NgModule({
   imports: [
@@ -29,7 +29,8 @@ import { AuthenticatedComponent } from './authenticated/authenticated.component'
       todos: todosReducer,
       books: BooksReducer
     }),
-    EffectsModule.forFeature([TodosEffects, BooksEffects])
+    EffectsModule.forFeature([TodosEffects, BooksEffects]),
+    GalleryModule.forRoot(),
   ],
   declarations: [
     ExamplesComponent,
@@ -39,9 +40,8 @@ import { AuthenticatedComponent } from './authenticated/authenticated.component'
     BookPreviewListComponent,
     BooksCollectionComponent,
     TodosComponent,
-    ParentComponent,
-    ChildComponent,
-    AuthenticatedComponent
+    BioComponent,
+    PlacesComponent
   ],
   providers: [GoogleBooksService]
 })
