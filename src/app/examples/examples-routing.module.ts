@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AuthGuardService } from '@app/core';
 
 import { ExamplesComponent } from './examples/examples.component';
 import { TodosComponent } from './todos/todos.component';
@@ -16,7 +15,7 @@ const routes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'todos',
+        redirectTo: 'bio',
         pathMatch: 'full'
       },
       {

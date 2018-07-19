@@ -76,6 +76,43 @@ mat-sidenav-container {
       flex: 1 0 auto;
     }
 
+    .projecd-card {
+      width: 600px;
+      height: 800px;
+      margin: 50px, 10px, 50px, 10px;
+      padding: 50px, 10px, 50px, 10px;
+      border: 20px;
+      content-align: center;
+      border-color: pink;
+    }
+
+    .img {
+      width: 100%;
+      margin-bottom: 18%;
+    }
+    .card-picture {
+      width: 23%;
+      margin-bottom: 2%;
+    }
+    .project-container {
+      min-height: 80%;
+      width: 80%;
+      margin: 10px, 10px, 10px, 10px;
+      padding: 10px, 10px, 10px, 10px;
+      border: 20px;
+      border-color: green;
+    }
+
+    .project-h1 {
+      margin-left: 20px;
+    }
+
+    .project-h2 {
+      margin-left: 20px;
+    }
+
+
+
     .footer {
       flex: 0 0 auto;
       padding: 0 15px;

@@ -1,42 +1,35 @@
 @import '../../../styles-variables';
 
-:host {
-  display: block;
-  width: 900px;
-  height: 800px;
-  position: sticky; top: 50px;
-
+.project-card {
+  max-width: 600px;
+  margin: 10px, 20px, 10px, 20px;
+  padding: 10px, 20px, 10px, 20px;
+  transition: all 1s linear;
 }
 
-.box-pos {
-  margin: 20px, 20px, 20px, 20px;
-  padding: 20px, 20px, 20px, 20px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-button {
-  position: absolute;
-  top: 25%;
-}
-
-.left-button {
+.fullscreen {
+  background-color: red;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  top: 0;
   left: 0;
 }
 
-.right-button {
-  right: 0;
+.img {
+  width: 100%;
 }
 
-p {
-  margin: 0;
-  padding: 1em;
+.project-container {
+  min-height: 100%;
+  width: 95%;
+  margin-left: 10px;
+  padding-left: 10px;
+  margin-bottom: 50px;
 }
 
-main {
-  margin-bottom: 16px;
+h2 {
+  margin-left: 20px;
+  margin-top: 20px;
 }
+

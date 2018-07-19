@@ -10,10 +10,10 @@ import { routeAnimations } from '@app/core';
 })
 export class ExamplesComponent implements OnInit {
   examples = [
-    { link: 'todos', label: 'Todos' },
-    { link: 'books', label: 'Reads' },
     { link: 'bio', label: 'Bio' },
-    { link: 'places', label: 'Places' }
+    { link: 'books', label: 'Reads' },
+    { link: 'places', label: 'Places' },
+    { link: 'todos', label: 'Todos' },
   ];
 
   constructor() {}

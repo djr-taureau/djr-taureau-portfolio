@@ -1,1 +1,14 @@
-<p>placeholder</p>
+<div class="container">
+  <h1>Curent and Recent Reads</h1>
+    <mat-list>
+        <mat-list-item *ngFor="let book of books">
+          <mat-icon matListIcon>book</mat-icon>
+          <h3 matLine> <a href="{{book.url}}">{{book.title}} </a></h3>
+          <p matLine>
+            <span> {{book.author}} </span>
+            <span class="demo-2"> -- {{book.content}} </span>
+          </p>
+        </mat-list-item>
+      </mat-list>
+</div>
+

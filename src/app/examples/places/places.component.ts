@@ -1,20 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Gallery, GalleryItem, ImageItem } from '@ngx-gallery/core';
-
+import { routeAnimations } from '@app/core';
 @Component({
   selector: 'app-places',
-  template: `
-  <div class="basic-container">
-	<h2>Provence 2018</h2>
-	<gallery id="basic-test" [items]="images" [loop]="true" [dots]="true"></gallery>
-</div>
-  `,
-  styleUrls: ['./places.component.scss']
+  templateUrl: './places.component.html',
+  styleUrls: ['./places.component.scss'],
+  animations: [routeAnimations]
 })
 export class PlacesComponent implements OnInit {
   imgPrefix: 'http://localhost:4200/assets/';
   images: GalleryItem[];
-  imageData = data;
+  imageData = placesData;
   constructor() {}
 
   ngOnInit() {
@@ -24,37 +20,67 @@ export class PlacesComponent implements OnInit {
   }
 }
 
-const data = [
+const placesData = [
   {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_109f.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg'
+    avatarSrc: null,
+    title: 'Senanque Abbey, Provence',
+    subtitle: 'Summer 2018',
+    srcUrl: '../../../assets/places/place_1.jpg',
+    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg',
+    googleMap: 'https://goo.gl/maps/zb873DgnLqz',
+    wikipedia: 'https://en.wikipedia.org/wiki/S%C3%A9nanque_Abbey',
+    caption: null,
+
   },
   {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_10b2.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_10b2_tn.jpg'
+    avatarSrc: null,
+    title: 'Venasque, Provence',
+    subtitle: 'Summer 2018',
+    srcUrl: '../../../assets/places/place_2.jpg',
+    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg',
+    googleMap: 'https://goo.gl/maps/zb873DgnLqz',
+    wikipedia: 'https://en.wikipedia.org/wiki/S%C3%A9nanque_Abbey',
+    caption: null,
   },
   {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_10ba.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_10ba_tn.jpg'
+    avatarSrc: null,
+    title: 'Gordes, Provence',
+    subtitle: 'Summer 2018',
+    srcUrl: '../../../assets/places/place_3.jpg',
+    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg',
+    googleMap: 'https://goo.gl/maps/zb873DgnLqz',
+    wikipedia: 'https://en.wikipedia.org/wiki/S%C3%A9nanque_Abbey',
+    caption: null,
   },
   {
-    srcUrl: 'http://localhost:4200/assets/places/',
-    previewUrl: 'http://localhost:4200/assets/places/fullsizeoutput_10c7.jpeg'
+    avatarSrc: null,
+    title: 'Vaucluse Provence',
+    subtitle: 'Summer 2018',
+    srcUrl: '../../../assets/places/place_4.jpg',
+    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg',
+    googleMap: 'https://goo.gl/maps/zb873DgnLqz',
+    wikipedia: 'https://en.wikipedia.org/wiki/S%C3%A9nanque_Abbey',
+    caption: null,
   },
   {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_11da.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_11da_tn.jpg'
+    avatarSrc: null,
+    title: 'Provence-Alpes-Cote DAzur, France',
+    subtitle: 'Summer 2018',
+    srcUrl: '../../../assets/places/place_5.jpg',
+    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg',
+    googleMap: 'https://goo.gl/maps/zb873DgnLqz',
+    wikipedia: 'https://en.wikipedia.org/wiki/S%C3%A9nanque_Abbey',
+    caption: null,
   },
   {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_109f.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg'
+    avatarSrc: null,
+    title: ' Provence',
+    subtitle: 'Summer 2018',
+    srcUrl: '../../../assets/places/place_6.jpg',
+    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_109f_tn.jpg',
+    googleMap: 'https://goo.gl/maps/zb873DgnLqz',
+    wikipedia: 'https://en.wikipedia.org/wiki/S%C3%A9nanque_Abbey',
+    caption: null,
   },
-  {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_11d2.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/thumbnails/fullsizeoutput_11d2_tn.jpg'
-  },
-  {
-    srcUrl: 'http://localhost:4200/assets/places/fullsizeoutput_1210.jpeg',
-    previewUrl: 'http://localhost:4200/assets/places/fullsizeoutput_1210.jpeg'
-  }
+
 ];

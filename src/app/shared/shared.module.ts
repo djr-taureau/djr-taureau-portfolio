@@ -14,6 +14,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatCardModule } from '@angular/material/card';
 import { MatListModule } from '@angular/material/list';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -42,7 +43,8 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatIconModule,
     MatTooltipModule,
     MatSnackBarModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatGridListModule
   ],
   declarations: [BigInputComponent, BigInputActionComponent],
   exports: [
@@ -65,7 +67,7 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatTooltipModule,
     MatSnackBarModule,
     MatSlideToggleModule,
-
+    MatGridListModule,
     BigInputComponent,
     BigInputActionComponent
   ]

@@ -25,7 +25,10 @@ import { GalleryModule } from '@ngx-gallery/core';
     // projects
     StaticModule,
     SettingsModule,
-    GalleryModule.forRoot(),
+    GalleryModule.forRoot({
+      loop: true,
+      loadingStrategy: 'lazy',
+    }),
     // app
     AppRoutingModule
   ],
