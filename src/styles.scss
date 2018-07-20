@@ -40,8 +40,8 @@
 }
 
 .default-theme {
-  @include angular-material-theme($app-theme);
-  @include custom-components-theme($app-theme);
+  @include angular-material-theme($app-black-theme);
+  @include custom-components-theme($app-black-theme);
 }
 
 .light-theme {

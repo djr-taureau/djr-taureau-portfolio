@@ -61,7 +61,7 @@ export const BOOKS = [
   {
     title: 'Confident Data Skills',
     author: 'By Kirill Ermenko',
-    content: 'Developing a sense of what is next with the convergence of networks, platforms, cloud computing, and big dataConfi',
+    content: 'Case Studies and Primer on strengthing your data skills and turning your ideas into innovative solutions',
     url: 'https://www.amazon.com/Confident-Data-Skills-Fundamentals-Supercharge/dp/0749481544'
   },
 ];

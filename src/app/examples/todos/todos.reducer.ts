@@ -44,11 +44,11 @@ export type TodosActions =
 
 export const initialState: TodosState = {
   items: [
-    { id: uuid(), name: 'Open Todo list example', done: true },
-    { id: uuid(), name: 'Check the other examples', done: false },
+    { id: uuid(), name: 'Review Candidate Resume', done: true },
+    { id: uuid(), name: 'Check Candidate GitHub Repos', done: false },
     {
       id: uuid(),
-      name: 'Use Angular ngRx Material Starter in your project',
+      name: 'Hire this candidate',
       done: false
     }
   ],
