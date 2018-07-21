@@ -1,58 +1,119 @@
-<div class="project-container">
-    <h2>Projects</h2>
-    <div class="row">
-    <div class="col-md-6">
-      <mat-card class="project-card mat-elevation-z4" [ngClass]="{'fullscreen': isCardExpanded}">
-      <mat-card-header>
-        <img mat-card-avatar src="../../../assets/projects/angular-red.png">
-        <mat-card-title>Pomodoro-it</mat-card-title>
-        <mat-card-subtitle>Angular 6, Material, ngrx 6</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="../../../assets/projects/rz-pomo.png">
+<div class="container">
+  <div class="row">
+      <mat-tab-group>
+        <mat-tab label="Pomo-Doist">
+            <div class="col-lg-10 project-card">
+                <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                  <img mat-card-avatar src="../../../assets/projects/angular-red.png">
+                  <mat-card-title>Pomodoro-it</mat-card-title>
+                  <mat-card-subtitle>Angular 6, Material, ngrx 6</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../assets/projects/pomo-doist.png">
+                <mat-card-content>
+                  <p>Placehoder here</p>
+                </mat-card-content>
+                <mat-card-actions>
+                <a mat-icon-button matTooltip="Project Github Repository"
+                    matdTooltipPosition="before" href="https://github.com/djr-taureau/pomodoro-it-ngrx" target="_blank">
+                  <mat-icon><i class="material-icons">code</i></mat-icon></a>
+                <a mat-button matdTooltipPosition="before" matTooltiop="Open App" href="https://pomodoro-it.firebaseapp.com" target="_blank">
+                  <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
+                </a>
+              </mat-card-actions>
+            </mat-card>
+            </div>
+        </mat-tab>
+        <mat-tab label="Personal Trainer">
+            <div class="col-lg-10 project-card">
+                <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                  <img mat-card-avatar src="../../../assets/projects/angular-red.png">
+                  <mat-card-title>Personal Trainer</mat-card-title>
+                  <mat-card-subtitle>Angular 6, Bootstrap, MongoDB</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../assets/projects/personal-trainer.png">
+                <mat-card-content>
+                  <p>Placehoder here</p>
+                </mat-card-content>
+                <mat-card-actions>
+                <a mat-icon-button matTooltip="Project Github Repository"
+                    matdTooltipPosition="before" href="https://github.com/djr-taureau/angular-personal-trainer" target="_blank">
+                  <mat-icon><i class="material-icons">code</i></mat-icon></a>
+                <a mat-button matdTooltipPosition="before" matTooltiop="Open App" href="https://personal-trainer-49f99.firebaseapp.com/" target="_blank">
+                  <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
+                </a>
+              </mat-card-actions>
+            </mat-card>
+            </div>
+        </mat-tab>
+        <mat-tab label='Auth'>
+            <div class="col-lg-10 project-card">
+                <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                  <img mat-card-avatar src="../../../assets/projects/angular-red.png">
+                  <mat-card-title>Jams Music Player</mat-card-title>
+                  <mat-card-subtitle>AngularJS</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../assets/projects/jams.png">
 
-      <mat-card-actions>
-      <a mat-icon-button matTooltip="Project Github Repository"
-          matdTooltipPosition="before" href="https://github.com/djr-taureau/pomodoro-it-ngrx" target="_blank">
-        <mat-icon><i class="material-icons">code</i></mat-icon></a>
-      <a mat-button matdTooltipPosition="before" matTooltiop="Open App" href="https://pomodoro-it.firebaseapp.com" target="_blank">
-        <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
-      </a>
-    </mat-card-actions>
-  </mat-card>
-    </div>
-    <div class="col-md-6">
-      <mat-card class="project-card mat-elevation-z4" [ngClass]="{'fullscreen': isCardExpanded}">
-      <mat-card-header>
-        <img mat-card-avatar src="../../../assets/projects/angular-red.png">
-        <mat-card-title>Simple Chat App</mat-card-title>
-        <mat-card-subtitle>AngularJS, Material, Firebase</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="../../../assets/projects/rsz_clack.png">
-      <mat-card-actions>
-          <a mat-icon-button href="https://github.com/djr-taureau/bloc-clack" target="_blank">
-            <mat-icon><i class="material-icons">code</i></mat-icon></a>
-          <a mat-button href="http://bloc-clack.herokuapp.com" target="_blank">
-            <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
-          </a>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div class="spacer row col-12"></div>
-    <div class="row">
-    <div class="offset-md-6 col-md-6">
-      <mat-card class="project-card mat-elevation-z4" [ngClass]="{'fullscreen': isCardExpanded}">
-      <mat-card-header>
-        <img mat-card-avatar src="../../../assets/projects/angular-red.png">
-        <mat-card-title>Jams Music Player</mat-card-title>
-        <mat-card-subtitle>AngularJS</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="../../../assets/projects/rsz_jams.png">
-      <mat-card-actions>
-          <a mat-icon-button href="https://github.com/djr-taureau/Bloc-Jams-AngularJS" target="_blank">
-            <mat-icon><i class="material-icons">code</i></mat-icon></a>
-      </mat-card-actions>
-      </mat-card>
-    </div>
-    </div>
-    <div class="row col-12"></div>
-    </div>
+                <mat-card-actions>
+                <a mat-icon-button matTooltip="Project Github Repository"
+                    matdTooltipPosition="before" href="https://github.com/djr-taureau/Bloc-Jams-AngularJS" target="_blank">
+                  <mat-icon><i class="material-icons">code</i></mat-icon></a>
+                <a mat-button matdTooltipPosition="before" matTooltiop="Open App" href="http://bloc-clack.herokuapp.com" target="_blank">
+                  <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
+                </a>
+              </mat-card-actions>
+              </mat-card>
+              </div>
+
+        </mat-tab>
+        <mat-tab label="Chat">
+            <div class="col-lg-10 project-card">
+                <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                  <img mat-card-avatar src="../../../assets/projects/angular-red.png">
+                  <mat-card-title>Simple Chat App</mat-card-title>
+                  <mat-card-subtitle>AngularJS, Angular Material</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../assets/projects/chat.png">
+
+                <mat-card-actions>
+                <a mat-icon-button matTooltip="Project Github Repository"
+                    matdTooltipPosition="before" href="https://github.com/djr-taureau/bloc-clack" target="_blank">
+                  <mat-icon><i class="material-icons">code</i></mat-icon></a>
+                <a mat-button matdTooltipPosition="before" matTooltiop="Open App" href="http://bloc-clack.herokuapp.com" target="_blank">
+                  <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
+                </a>
+              </mat-card-actions>
+              </mat-card>
+              </div>
+        </mat-tab>
+        <mat-tab label="Jams">
+            <div class="col-lg-10 project-card">
+                <mat-card class="mat-elevation-z4">
+                <mat-card-header>
+                  <img mat-card-avatar src="../../../assets/projects/angular-red.png">
+                  <mat-card-title>Jams Music Player</mat-card-title>
+                  <mat-card-subtitle>AngularJS</mat-card-subtitle>
+                </mat-card-header>
+                <img mat-card-image src="../../../assets/projects/jams.png">
+
+                <mat-card-actions>
+                <a mat-icon-button matTooltip="Project Github Repository"
+                    matdTooltipPosition="before" href="https://github.com/djr-taureau/Bloc-Jams-AngularJS" target="_blank">
+                  <mat-icon><i class="material-icons">code</i></mat-icon></a>
+                <a mat-button matdTooltipPosition="before" matTooltiop="Open App" href="http://bloc-clack.herokuapp.com" target="_blank">
+                  <mat-icon><i class="material-icons">open_in_new</i></mat-icon>
+                </a>
+              </mat-card-actions>
+              </mat-card>
+              </div>
+
+        </mat-tab>
+      </mat-tab-group>
+
+
+
+

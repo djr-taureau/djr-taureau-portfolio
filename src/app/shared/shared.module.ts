@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule} from '@angular/material/form-field';
+import { MatSliderModule } from '@angular/material/slider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatMenuModule } from '@angular/material/menu';
@@ -22,6 +23,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { BigInputComponent } from './big-input/big-input.component';
 import { BigInputActionComponent } from './big-input/big-input-action.component';
+import { MatSlideToggle } from '@angular/material';
 
 @NgModule({
   imports: [
@@ -44,7 +46,9 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatTooltipModule,
     MatSnackBarModule,
     MatSlideToggleModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSliderModule,
+    MatSlideToggleModule,
   ],
   declarations: [BigInputComponent, BigInputActionComponent],
   exports: [
@@ -67,6 +71,7 @@ import { BigInputActionComponent } from './big-input/big-input-action.component'
     MatTooltipModule,
     MatSnackBarModule,
     MatSlideToggleModule,
+    MatSliderModule,
     MatGridListModule,
     BigInputComponent,
     BigInputActionComponent
