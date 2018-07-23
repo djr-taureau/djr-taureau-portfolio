@@ -64,4 +64,10 @@ export const BOOKS = [
     content: 'Case Studies and Primer on strengthing your data skills and turning your ideas into innovative solutions',
     url: 'https://www.amazon.com/Confident-Data-Skills-Fundamentals-Supercharge/dp/0749481544'
   },
+  {
+    title: 'Deep Work: Rules for Focused Success in a Distracted World',
+    author: 'By Cal Newport',
+    content: 'An MIT Computer Science professor discusses how to practice focused work, a competitive advantage in the 21st century',
+    url: 'https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692'
+  },
 ];
