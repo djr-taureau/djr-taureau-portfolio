@@ -8,12 +8,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { CarouselContext } from './projects/carousel.directive';
 
 @NgModule({
-  imports: [
-    SharedModule,
-    StaticRoutingModule,
-    CarouselModule.forRoot()
-  ],
+  imports: [SharedModule, StaticRoutingModule, CarouselModule.forRoot()],
   declarations: [OverviewComponent, ProjectsComponent, CarouselDirective]
-
 })
 export class StaticModule {}
