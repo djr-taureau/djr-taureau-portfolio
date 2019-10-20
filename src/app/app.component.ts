@@ -41,7 +41,7 @@ export class AppComponent implements OnInit, OnDestroy {
   logo = require('../assets/logo.png');
   navigation = [
     { link: 'overview', label: 'Overview' },
-    { link: 'projects', label: 'Projects' },
+    { link: 'projects', label: 'Demos' },
     { link: 'examples', label: 'About' }
     // TODO add contact form
     // { link: 'contact', label: 'Contact'}
